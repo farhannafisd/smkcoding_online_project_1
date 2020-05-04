@@ -1,4 +1,4 @@
-wapply plugin: 'com.android.application'
++wapply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -35,5 +35,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
 }
+apply plugin: 'kotlin'
 apply plugin: 'kotlin'
 apply plugin: 'kotlin'
