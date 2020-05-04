@@ -1,4 +1,4 @@
-package com.example.biodatadiri
+package com.hancode.biodatadiri
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.biodatadiri", appContext.packageName)
+        assertEquals("com.hancode.biodatadiri", appContext.packageName)
     }
 }

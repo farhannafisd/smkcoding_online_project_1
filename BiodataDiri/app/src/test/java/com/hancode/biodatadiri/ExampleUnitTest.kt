@@ -1,4 +1,4 @@
-package com.example.biodatadiri
+package com.hancode.biodatadiri
 
 import org.junit.Test
 
