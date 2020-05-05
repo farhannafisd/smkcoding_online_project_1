@@ -215,7 +215,9 @@
                     android:layout_weight="2"
                     android:text=":"
                     android:textAlignment="center"
+
                     android:textSize="18sp" />
+
 
                 <TextView
                     android:id="@+id/txtdate"
