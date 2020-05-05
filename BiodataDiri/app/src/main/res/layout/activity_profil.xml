@@ -27,7 +27,7 @@
             android:id="@+id/tv_foto"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_person"
+            android:src="@drawable/movetol"
             android:layout_below="@+id/tv_biodata"
             android:layout_centerHorizontal="true"
             />
@@ -179,16 +179,31 @@
                     android:textSize="18sp"
                     android:text="Alamat Anda"/>
             </LinearLayout>
-            <Button
-                android:id="@+id/btnEditNama"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Edit Nama"/>
-            <Button
-                android:id="@+id/btnCall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Telepon"/>
+                android:orientation="horizontal"
+                android:layout_margin="16dp">
+           '         <Button
+                        android:id="@+id/btnEditNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Edit Nama"/>
+                    <Button
+                        android:id="@+id/btnCall"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Telepon"/>'
+                <Button
+                    android:id="@+id/btnMe"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="About Me "/>'
+
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 
