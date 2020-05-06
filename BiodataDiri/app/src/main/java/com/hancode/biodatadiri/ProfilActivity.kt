@@ -19,12 +19,11 @@ class ProfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
-        //Memanggil Fungsi ambil data
+
         ambilData()
-        //tombol klik listener ke tombol edit
-        //jika tombol edit di klik maka akan menjalankan method nav ke edit profil
+
         btnEditNama.setOnClickListener { navigasiKeEditProfil() }
-        //memberi click listener ke tomboll call
+
         btnCall.setOnClickListener { dialPhoneNumber(txtTelp.text.toString()) }
         btnMe.setOnClickListener{navigasiKeActivityAbout()}
     }
@@ -44,7 +43,7 @@ class ProfilActivity : AppCompatActivity() {
     }
     private fun navigasiKeEditProfil() {
         val intent = Intent(this, EditProfilActivity::class.java)
-// mengirimkan data dengan keyName "nama"
+
         val namaUser = txtName.text.toString()
         intent.putExtra("nama", namaUser)
         startActivityForResult(intent, REQUEST_CODE)
@@ -53,7 +52,7 @@ class ProfilActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_CODE){
             if (resultCode == Activity.RESULT_OK) {
-//jika sukses maka data hasil edit kita tampikan ke extView txtName
+
                 val result = data?.getStringExtra("nama")
                 this.txtName.text = result
             }else{
@@ -62,7 +61,7 @@ class ProfilActivity : AppCompatActivity() {
             }
         }
     }
-    //fungsi untuk melakukan dial
+
     private fun dialPhoneNumber(phoneNumber: String) {
         val intent = Intent(Intent.ACTION_DIAL).apply {
             data = Uri.parse("tel:$phoneNumber")

@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         tools:context=".ProfilActivity">
 
+
         <TextView
             android:id="@+id/tv_biodata"
             android:layout_width="match_parent"

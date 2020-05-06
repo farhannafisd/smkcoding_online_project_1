@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BiodataDiri</string>
+    <string name="app_name">Biodata Diri</string>
 
     <string-array name="jenis_kelamin">
         <item>Pilih Jenis Kelamin</item>
